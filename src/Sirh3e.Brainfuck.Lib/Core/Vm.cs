@@ -80,7 +80,7 @@ namespace Sirh3e.Brainfuck.Lib.Core
         {
             if (!disposing)
                 return;
-            
+
             Console.WriteLine(_screenBuffer.ToArray());
         }
 

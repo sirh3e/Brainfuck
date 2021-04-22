@@ -13,7 +13,7 @@ namespace Sirh3e.Brainfuck.Cli
             //ToDo check if the input is source code
             var path = Environment.GetEnvironmentVariable("BRAINFUCK_DIR") ?? "/src/brainfuck/";
             var name = args.Any() ? args.First() : "HelloWorld.bf";
-            
+
             var info = new FileInfo(Path.Combine(path, name));
 
             if (!info.Exists)
