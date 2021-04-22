@@ -11,7 +11,6 @@ namespace Sirh3e.Brainfuck.Cli
         private static async Task Main(string[] args)
         {
             //ToDo check if the input is source code
-            //ToDo check if the input is source code
             var path = Environment.GetEnvironmentVariable("BRAINFUCK_DIR") ?? "/src/brainfuck/";
             var name = args.Any() ? args.First() : "HelloWorld.bf";
 
