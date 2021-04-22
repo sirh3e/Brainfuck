@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <AssemblyName>Sirh3e.Brainfuck.Cli</AssemblyName>
+        <RootNamespace>Sirh3e.Brainfuck.Cli</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Brainfuck.bf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sirh3e.Brainfuck.Lib\Sirh3e.Brainfuck.Lib.csproj" />
+    </ItemGroup>
+
+</Project>
