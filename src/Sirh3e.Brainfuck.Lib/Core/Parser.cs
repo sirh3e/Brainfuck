@@ -15,8 +15,7 @@ namespace Sirh3e.Brainfuck.Lib.Core
             var instructions = new List<IInstruction>();
 
             T CreateJumpInstruction<T>(int index)
-                where T : JumpInstruction, new()
-                => new()
+                where T : JumpInstruction, new() => new()
             {
                 Index = index
             };
